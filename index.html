@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-flex-container">
+        <div class="nav-left-flex">
+          <div class="burger-container"><img class="burger-icon" src="./images/icon-menu.svg" alt="icon-menu"></div>
+          <div class="logo-container"><img class="logo" src="./images/logo.svg" alt="logo"></div>
+        </div>
+        <div class="nav-right-flex">
+          <div class="shopping-cart-container"><img class="shopping-cart" src="./images/icon-cart.svg" alt="icon-cart"></div>
+          <div class="profile-img-container"><img class="profile-img" src="./images/image-avatar.png"></div>
+        </div>
+      </div>
+    </nav>
+    <nav class="mobile-nav hide">
+      <div class="mobile-nav-flex-container">
+        <a>Collections</a>
+        <a>Men</a>
+        <a>Women</a>
+        <a>About</a>
+        <a>Contact</a>
+      </div> 
+    </nav>
+  </header>
+  <main>
+    <div class="gallery">
+      <img class="product-img product-one" src="./images/image-product-1.jpg" alt="shoe front">
+      <img class="product-img product-two hide" src="./images/image-product-2.jpg" alt="shoe side">
+      <img class="product-img product-three hide" src="./images/image-product-3.jpg" alt="shoe side">
+
+      <button class="gallery-btn previous-btn"><img class="previous" src="./images/icon-previous.svg" alt="icon-previous"></button>
+      <button class="gallery-btn next-btn"><img class="next" src="./images/icon-next.svg" alt="icon-next"></button>
+    </div>
+    <div class="product-info-container">
+      <h2 class="sneaker-company">Sneaker Company</h2>
+      <h1 class="product-name">Fall Limited Edition Sneakers</h1>
+      <p class="product-description">These low-profile sneakers are your perfect casual wear companion.     Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="price-flex-container">
+        <div class="left-flex">
+          <p class="new-price">$125.00</p>
+          <div class="discount-container"><p class="discount">50%</p></div>
+        </div>
+        <div class="right-flex">
+          <p class="original-price">$250.00</p>
+        </div>
+        
+      </div>
+      <div class="quantity-cart-flex-container">
+        <div class="quantity-container">
+          <button class="remove-btn"><img src="./images/icon-minus.svg" alt="icon-minus"></button>
+          <p class="quantity-display">0</p>
+          <button class="add-btn"><img src="./images/icon-plus.svg" alt="icon-plus"></button>
+        </div>
+        <button class="cart-btn"><img class="cart-btn-img" src="./images/cart-black.svg" alt="icon-cart"> Add to Cart</button>
+      </div>
+    </div>
+  </main>
+  
+  
+  
+  
+  
+
+  <!-- Sneaker Company
+  
+  
+  
+
+  0
+  Add to cart -->
+</body>
+</html>
