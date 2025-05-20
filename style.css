@@ -261,6 +261,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .cart-btn-img {
@@ -270,33 +271,6 @@ body {
 
 .hide {
     display: none;
-}
-
-@media screen and (max-width: 375px) {
-    .nav-left-flex {
-        margin-left: 1rem;
-    }
-
-    .nav-right-flex {
-        margin-right: 1rem;
-    }
-
-    .product-info-container {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-   .original-price {
-        margin-right: 1.5rem;
-   }
-
-   .quantity-container {
-        width: 21.4375rem;
-        margin-left: auto;
-        margin-right: auto; 
-   }
-
-
 }
 
 @media screen and (min-width: 768px) {
