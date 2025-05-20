@@ -217,6 +217,10 @@ body {
     font-weight: 700;
 }
 
+.quantity-cart-flex-container {
+    padding-bottom: 1rem;
+}
+
 .quantity-container {
     display: flex;
     justify-content: space-between;
@@ -261,7 +265,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
 }
 
 .cart-btn-img {
