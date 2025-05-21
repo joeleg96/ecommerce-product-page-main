@@ -1,4 +1,5 @@
 var productImgList = [".product-one", ".product-two", ".product-three", ".product-four"];
+var thumbnailImgList = [".thumbnail-one", ".thumbnail-two", ".thumbnail-three", ".thumbnail-four"];
 var globalClickTracker = 0;
 
 $(".thumbnail").on("click", function(event) {
@@ -39,12 +40,15 @@ $(".next-btn").on("click", function() {
     globalClickTracker += 1;
     $(".product-img").addClass("hide");
     $(productImgList[globalClickTracker]).removeClass("hide");
-    console.log(globalClickTracker);
+    $(".thumbnail").removeClass("filter");
+    $(thumbnailImgList[globalClickTracker]).addClass("filter");
     
     if(globalClickTracker === 4) {
         globalClickTracker = 0;
         $(".product-img").addClass("hide");
         $(productImgList[globalClickTracker]).removeClass("hide");
+        $(".thumbnail").removeClass("filter");
+        $(thumbnailImgList[globalClickTracker]).addClass("filter");
     }
 });
 
@@ -52,11 +56,14 @@ $(".previous-btn").on("click", function() {
     globalClickTracker -= 1;
     $(".product-img").addClass("hide");
     $(productImgList[globalClickTracker]).removeClass("hide");
-    console.log(globalClickTracker);
+    $(".thumbnail").removeClass("filter");
+    $(thumbnailImgList[globalClickTracker]).addClass("filter");
     
     if(globalClickTracker === -1) {
         globalClickTracker = 3;
         $(".product-img").addClass("hide");
         $(productImgList[globalClickTracker]).removeClass("hide");
+        $(".thumbnail").removeClass("filter");
+        $(thumbnailImgList[globalClickTracker]).addClass("filter");
     }
 });
