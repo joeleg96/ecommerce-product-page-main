@@ -296,12 +296,24 @@ hr {
 
     .gallery {
         width: 38rem;
-        height: 18.125rem;
+        height: 20rem;
         margin-top: 4rem;
     }
 
     .product-img {
         border-radius: .825rem;
+    }
+
+    .product-one {
+        object-position: 0px -150px;
+    }
+
+    .product-three {
+        object-position: 0px -5px;
+    }
+
+    .product-four {
+        object-position: 0px -50px;
     }
 
     .product-info-container {
@@ -393,6 +405,10 @@ hr {
     .product-one {
         object-position: bottom center;
     } 
+
+    .product-four {
+        object-position: top center;
+    }
     
     .gallery {
         width: 100%;
