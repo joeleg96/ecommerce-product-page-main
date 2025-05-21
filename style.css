@@ -392,6 +392,15 @@ hr {
 
     .product-one {
         object-position: bottom center;
+    } 
+    
+    .gallery {
+        width: 100%;
+        height: auto;
+    }
+
+    .add-btn, .remove-btn {
+        cursor: pointer;
     }
 
     .desktop-img-collection {
@@ -399,11 +408,6 @@ hr {
         grid-template-columns: 5.5rem 5.5rem 5.5rem 5.5rem;
         justify-content: space-between;
         margin-top: 2rem;
-    }
-
-    .gallery {
-        width: 100%;
-        height: auto;
     }
 
     .thumbnail-container {
@@ -416,6 +420,7 @@ hr {
         height: 100%;
         object-fit: cover;
         border-radius: .825rem;
+        cursor: pointer;
     }
 
     .product-info-container {
@@ -430,5 +435,14 @@ hr {
         width: 28rem;
         display: grid;
         grid-template-columns: .5fr 1fr;
+    }
+
+    .cart-btn {
+        cursor: pointer;
+    }
+
+    .filter {
+        opacity: .5;
+        border: 2px solid rgb(255, 125, 27, 1);
     }
 }
