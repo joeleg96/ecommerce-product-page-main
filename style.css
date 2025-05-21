@@ -89,12 +89,26 @@ body {
 
 .mobile-nav {
     min-height: 100vh;
-    width: 60%;
+    width: 15rem;
     position: fixed;
     z-index: 99;
     top: 0;
     left: 0;
-    background-color: blue;
+    background-color: var(--grey-50);
+    box-shadow: ;
+}
+
+.mobile-nav-flex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+
+.mobile-menu-option {
+    margin-top: 2rem;
+    font-weight: 700;
 }
 
 .gallery {
@@ -383,6 +397,10 @@ hr {
         text-decoration: none;
         color: var(--grey-500);
         margin-left: 3rem;
+    }
+
+    .logo-container:hover, .profile-img:hover, .shopping-cart-container:hover {
+        cursor: pointer;
     }
 
     hr {

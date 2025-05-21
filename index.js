@@ -1,6 +1,7 @@
 var productImgList = [".product-one", ".product-two", ".product-three", ".product-four"];
 var thumbnailImgList = [".thumbnail-one", ".thumbnail-two", ".thumbnail-three", ".thumbnail-four"];
 var globalClickTracker = 0;
+var quantityTracker = 0;
 
 $(".thumbnail").on("click", function(event) {
     $(".thumbnail").removeClass("filter");
@@ -67,3 +68,26 @@ $(".previous-btn").on("click", function() {
         $(thumbnailImgList[globalClickTracker]).addClass("filter");
     }
 });
+
+$ (".add-btn").on("click", function() {
+    quantityTracker++;
+    $(".quantity-display").text(quantityTracker);
+});
+
+$ (".remove-btn").on("click", function() {
+    quantityTracker--;
+    $(".quantity-display").text(quantityTracker);
+
+    if (quantityTracker === -1) {
+        quantityTracker = 0;
+        $(".quantity-display").text(quantityTracker);
+    }
+});
+
+$(".burger-container").on("click", function() {
+    $(".mobile-nav").removeClass("hide");
+});
+
+$(".close-btn-container").on("click", function() {
+    $(".mobile-nav").addClass("hide");
+})
