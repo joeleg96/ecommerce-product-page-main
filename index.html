@@ -32,7 +32,40 @@
           <a href="#" class="desktop-menu-option">Contact</a>
         </div>
         <div class="nav-right-flex">
-          <div class="shopping-cart-container"><img class="shopping-cart" src="./images/icon-cart.svg" alt="icon-cart"></div>
+
+          <div class="shopping-cart-container">
+            <img class="shopping-cart" src="./images/icon-cart.svg" alt="icon-cart">
+            <div class="cart-alert hide">
+              <p class="alert-text">0</p>
+            </div>
+            <div class="my-cart-container hide">
+              <div class="my-cart-header">
+                <p class="cart-title">Cart</p>
+                <img class="close-cart" src="./images/icon-close.svg" alt="close icon">
+              </div>
+              <hr class="my-cart-hr">
+              <div class="my-cart-display">
+                <p class="empty-cart-text">Your cart is empty.</p>
+                <div class="items-in-cart hide">
+                  <div class="cart-item-img-container"><img class="cart-item-img"src="./images/image-product-1-thumbnail.jpg" alt="shoe thumbnail"></div>
+                  <div class="cart-item-text-container">
+                    <p class="item-name">Fall Limited Edition Sneakers</p>
+                    <div class="item-quantity-container">
+                      <p class="item-price">$125.00</p>
+                      <p class="quantity-selected">x3</p>
+                      <p class="purchase-total">$375.00</p>
+                    </div>
+                  </div>
+                  <div class="delete-icon-container">
+                    <img class="delete-icon" src="./images/icon-delete.svg" alt="delete icon">
+                  </div>
+                </div>
+              </div>
+              <div class="checkout-btn-container">
+                  <button class="checkout-btn">Checkout</button>
+                </div>
+            </div>
+          </div>
           <div class="profile-img-container"><img class="profile-img" src="./images/image-avatar.png"></div>
         </div>
       </div>
@@ -46,7 +79,7 @@
         <a class="mobile-menu-option">Women</a>
         <a class="mobile-menu-option">About</a>
         <a class="mobile-menu-option">Contact</a>
-      </div> 
+      </div>
     </nav>
   </header>
   <main>
@@ -92,18 +125,5 @@
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <script src="./index.js" charset="UTF-8"></script>
   </main>
-  
-  
-  
-  
-  
-
-  <!-- Sneaker Company
-  
-  
-  
-
-  0
-  Add to cart -->
 </body>
 </html>
